@@ -1,7 +1,7 @@
 ARG GOVERSION=1.22
 ARG GOARCH
 ARG GOARCH=adm64
-FROM registry-vpc.cn-hangzhou.aliyuncs.com/zml_docker/docker:1.20 as builder
+FROM registry.cn-hangzhou.aliyuncs.com/zml_docker/docker:1.20 as builder
 ARG GOARCH
 ENV GOARCH=${GOARCH}
 WORKDIR /go/src/k8s.io/kube-state-metrics/
